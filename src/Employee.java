@@ -9,8 +9,7 @@ public class Employee {
     public Employee(String fullName, int salary) {
         this.fullName = fullName;
         this.salary = salary;
-        count++;
-        id = count;
+        id = ++count;
     }
 
     public String getFullName() {
