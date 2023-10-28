@@ -43,8 +43,7 @@ public class Main {
     public static Employee findMaxSalaryEmployee() {
         Employee maxSalaryEmployee = null;
         for (Employee employee : employeeStorage) {
-            if (employee != null) {
-                if (maxSalaryEmployee == null || employee.getSalary() > maxSalaryEmployee.getSalary()) {
+            if (employee != null && (maxSalaryEmployee == null || employee.getSalary() > maxSalaryEmployee.getSalary())) {
                     maxSalaryEmployee = employee;
                 }
             }
