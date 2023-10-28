@@ -32,8 +32,7 @@ public class Main {
     public static Employee findMinSalaryEmployee() {
         Employee minSalaryEmployee = null;
         for (Employee employee : employeeStorage) {
-            if (employee != null) {
-                if (minSalaryEmployee == null || employee.getSalary() < minSalaryEmployee.getSalary()) {
+            if (employee != null && (minSalaryEmployee == null || employee.getSalary() < minSalaryEmployee.getSalary())) {
                     minSalaryEmployee = employee;
                 }
             }
